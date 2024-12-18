@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter_Variable.ttf') format('truetype');
+    font-weight: 100 900; /* Defines the weight range (optional) */
+    font-style: normal;
+    font-variation-settings: "wght" 400; /* Default weight (can be adjusted dynamically) */
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('./fonts/Inter_Italic_Variable.ttf') format('truetype');
+    font-weight: 100 900; /* Defines the weight range (optional) */
+    font-style: italic;
+    font-variation-settings: "wght" 400; /* Default weight (can be adjusted dynamically) */
+}
+
+
+* {
+    font-family: 'Inter', sans-serif;
+}
