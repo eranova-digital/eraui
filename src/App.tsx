@@ -1,3 +1,5 @@
+import { PaperAirplaneIcon } from "@heroicons/react/24/outline";
+import { Button } from "./components/buttons/Button";
 import { H1, H2, H3, H4, H5, H6 } from "./components/typography/Headings";
 import { P, Fineprint } from "./components/typography/Paragraphs";
 
@@ -28,6 +30,18 @@ export default function App() {
             <P className="mb-10"><b>Paragraph</b>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptate cupiditate consectetur aliquid nostrum accusantium. Exercitationem veniam ullam praesentium asperiores ipsa cum molestiae ad! Ratione ex dolorum accusamus repellat voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptate cupiditate consectetur aliquid nostrum accusantium. Exercitationem veniam ullam praesentium asperiores ipsa cum molestiae ad! Ratione ex dolorum accusamus repellat voluptatum.</P>
             <Fineprint><b>Fineprint</b>. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptate cupiditate consectetur aliquid nostrum accusantium. Exercitationem veniam ullam praesentium asperiores ipsa cum molestiae ad! Ratione ex dolorum accusamus repellat voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae voluptate cupiditate consectetur aliquid nostrum accusantium. Exercitationem veniam ullam praesentium asperiores ipsa cum molestiae ad! Ratione ex dolorum accusamus repellat voluptatum.</Fineprint>
           </div>
+        </div>
+      </section>
+      <section id="buttons"
+        className="mt-20"
+      >
+        <div className="mb-14">
+          <H1 accent="bg-primary-500" bold={true}>Buttons</H1>
+        </div>
+        <div>
+          <Button icon={<PaperAirplaneIcon/>}>Click me</Button>
+          <br/>
+          <Button>Click me</Button>
         </div>
       </section>
     </main>
