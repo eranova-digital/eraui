@@ -44,6 +44,7 @@ export default function App() {
           <Button prefix={<PaperAirplaneIcon/>}>Click me</Button>
           <Button>Click me</Button>
           <Button suffix={<PaperAirplaneIcon/>}>Click me</Button>
+          <Button icon={<PaperAirplaneIcon/>}/>
         </div>
       </section>
     </main>
