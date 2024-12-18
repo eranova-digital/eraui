@@ -38,10 +38,12 @@ export default function App() {
         <div className="mb-14">
           <H1 accent="bg-primary-500" bold={true}>Buttons</H1>
         </div>
-        <div>
-          <Button icon={<PaperAirplaneIcon/>}>Click me</Button>
-          <br/>
+        <div
+          className="flex flex-row space-x-4"
+        >
+          <Button prefix={<PaperAirplaneIcon/>}>Click me</Button>
           <Button>Click me</Button>
+          <Button suffix={<PaperAirplaneIcon/>}>Click me</Button>
         </div>
       </section>
     </main>
