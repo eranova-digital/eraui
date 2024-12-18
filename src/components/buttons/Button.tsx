@@ -1,3 +1,4 @@
+import clsx from "clsx";
 import React from "react";
 import { ReactNode } from "react";
 
@@ -21,15 +22,24 @@ interface ButtonProps {
     * Icon to the right of the content.
     */
     icon?: ReactNode
+
+    /**
+    * Background color for the button.
+    * @default bg-primary-500
+    */
+    color?: string
 }
 
-export function Button({children, prefix, suffix, icon}: ButtonProps) {
+export function Button({children, prefix, suffix, icon, color = "bg-primary-500"}: ButtonProps) {
+    const hoverColorClass = `${color.split('-')[0]}-${color.split('-')[1]}-${Number(color.split('-')[2])-100}`;
+    const activeColorClass = `${color.split('-')[0]}-${color.split('-')[1]}-${Number(color.split('-')[2])+100}`;
 
     return (
         <button
-            className="flex flex-row bg-primary-500 text-white py-2 px-4 rounded-md transition-all hover:bg-primary-400
-            active:bg-primary-600 active:scale-[98%]
-            "
+            className={clsx(`
+            flex flex-row ${color} text-white py-2 px-4 rounded-md transition-all hover:${hoverColorClass}
+            active:${activeColorClass} active:scale-[98%]    
+            `)}
         >
         {children && 
         <>

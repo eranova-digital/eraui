@@ -26,6 +26,7 @@ interface HeadingProps {
 
   /**
    * A colored accent line.
+   * @default bg-primary-500
    */
   accent?: string;
 
